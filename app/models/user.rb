@@ -23,7 +23,7 @@ class User < ApplicationRecord
   before_validation :ensure_session_token
 
   def self.find_by_credentials(email, password)
-    email = User.find_by(email: email)
+    user = User.find_by(email: email)
     if user&.authenticate(password)
       user
     else
@@ -38,7 +38,7 @@ class User < ApplicationRecord
   end
 
   def ensure_session_token
-      self.session_token || generate_session_token
+      self.session_token ||= generate_session_token
   end
 
   private

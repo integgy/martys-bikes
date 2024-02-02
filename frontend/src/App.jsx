@@ -1,5 +1,5 @@
 import { Navigate, createBrowserRouter, RouterProvider } from "react-router-dom"
-import Login from "./compnents/Login";
+import Login from "./compnents/session/Login";
 
 
 const router = createBrowserRouter([
