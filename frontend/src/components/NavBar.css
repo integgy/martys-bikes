@@ -1,5 +1,41 @@
 .navbar-container {
+    display: flex;
     border: 1px solid;
     width: inherit;
-    height: 50px;
+    height: 100px;
+    background: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    width: 25%;
+}
+
+.navbar-middle {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.navbar-right {
+    display: flex;
+    width: 25%;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar-links a {
+    color: white;
+}
+
+.logo {
+    display: flex;
 }
